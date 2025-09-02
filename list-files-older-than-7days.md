@@ -1,4 +1,4 @@
-# **Shell script to find and ist the log files older than 7 days in the /var/log folder**
+# **Shell script to find and list the log files older than 7 days in the /var/log folder**
 
 ```
 find /var/log -type f -name *.log -mtime +7 -exec ls -lh {} \;
@@ -17,8 +17,6 @@ find /var/log -type f -name *.log -mtime +7 -exec ls -lh {} \;
 ```-name *.log```: Search for files ending with .log 
 
 ```-mtime +7```: Filters files modified more than 7 days ago.
-
                  +7 means strictly older than 7 days.
-
                  -7 would mean newer than 7 days.
 
